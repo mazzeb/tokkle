@@ -1,0 +1,6 @@
+togglz:
+  console:
+    enabled: true
+    secured: false
+    use-management-port: false
+    path: /togglz

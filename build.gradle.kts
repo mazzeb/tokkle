@@ -19,13 +19,23 @@ configurations {
 
 repositories {
 	mavenCentral()
+	maven(url = "https://oss.sonatype.org/content/repositories/snapshots")
 }
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
+
+	implementation("org.togglz:togglz-core:2.6.1.Final")
+	implementation("org.togglz:togglz-spring-boot-starter:2.6.1.Final")
+	implementation("org.togglz:togglz-spring-boot-autoconfigure:2.6.1.Final")
+	implementation("org.togglz:togglz-console:2.6.1.Final")
+	implementation("org.togglz:togglz-kotlin:2.7.0-SNAPSHOT")
+
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
