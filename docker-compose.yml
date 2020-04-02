@@ -1,0 +1,7 @@
+version: "3"
+services:
+  mongodb:
+    container_name: tokkle_mongodb
+    image: mongo:4.0.12
+    ports:
+      - "27017:27017/tcp"

@@ -25,11 +25,13 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
+	implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
 
 	implementation("org.togglz:togglz-core:2.6.1.Final")
 	implementation("org.togglz:togglz-spring-boot-starter:2.6.1.Final")
 	implementation("org.togglz:togglz-spring-boot-autoconfigure:2.6.1.Final")
 	implementation("org.togglz:togglz-console:2.6.1.Final")
+	implementation("org.togglz:togglz-mongodb:2.6.1.Final")
 	implementation("org.togglz:togglz-kotlin:2.7.0-SNAPSHOT")
 
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
