@@ -13,7 +13,7 @@ class SomeController {
         return if (FEATURE_ONE.isActive()) {
             "feature one is active"
         } else {
-            "i am the default"
+            "i am the default without active features"
         }
     }
 }
