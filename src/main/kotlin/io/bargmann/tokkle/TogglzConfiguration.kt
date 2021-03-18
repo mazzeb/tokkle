@@ -1,7 +1,7 @@
 package io.bargmann.tokkle
 
-import com.mongodb.MongoClient
 import com.mongodb.WriteConcern
+import com.mongodb.client.MongoClient
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.togglz.core.context.StaticFeatureManagerProvider
